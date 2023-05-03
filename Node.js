@@ -4,16 +4,6 @@
  * Description: A simple Node class for use with linked list data structures.
  */
 
-// Single Linked List Node Class 
-class SingleLinkedListNode {
-  // Constructor
-  // This allows us to pass both data and the next pointer into adding a new node. But if no pointer is passed, it will set it to null for us.
-  constructor(data, next = null) { 
-    this.data = data; // Variable to store the data in
-    this.next = next; // Pointer needed for singular linked lists to point to next node
-  }
-} // End Single Linked List Node Class
-
 // Double Linked List Node Class
 class DoubleLinkedListNode {
   // Constructor
