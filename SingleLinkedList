@@ -195,4 +195,16 @@ class SingleLinkedList {
       movingNode = nextNode;
     }
   }
+   
+  // Print List Method to display the list
+  printList() {
+		let current = this.head; // Set current head to variable
+		let result = " "; // Empty string to store list
+		while (current != null) {
+			s += current.data;
+			current = current.next;
+		}
+		return s;
+	}
+  
 } //End Single Linked List Class
