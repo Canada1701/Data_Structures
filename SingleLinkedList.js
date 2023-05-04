@@ -75,7 +75,7 @@ class SingleLinkedList {
       this.tail.next = newNode; // Set tail next pointer to new node
       this.tail = newNode; // set the tail to the new node
     }
-    this.length++; // increment list
+    this.length++; // increment list length
     return this; // Return list
   }
 
@@ -95,7 +95,7 @@ class SingleLinkedList {
       this.head = null; // Set head pointer to null
       this.tail = null; // Set tail pointer to null
     }
-    this.length--; // Decrement list
+    this.length--; // Decrement list length
     return poppedNode; // Return removed node
   }
 
@@ -110,7 +110,7 @@ class SingleLinkedList {
       newNode.next = this.head; // Set new nodes next to the current head of list
       this.head = newNode; // Set the head to the new node
     }
-    this.length++; // Increment the list
+    this.length++; // Increment the list length
     return this; // Return list
   }
 
@@ -151,7 +151,7 @@ class SingleLinkedList {
     const before = this.getNodeAtIndex(index - 1); // Call the get node method for setting the before pointer
     newNode.next = after; // Set the new nodes next to the next node you stored in the pointer
     before.next = newNode; // Set the old nodes next to the new node
-    this.length++; // Increment the list
+    this.length++; // Increment the list length
     return this; // Return list
   }
 
@@ -174,10 +174,9 @@ class SingleLinkedList {
     const removedNode = this.getNodeAtIndex(index); // New node is the node we want to delete
     before.next = removedNode.next; // Set the node to be deleted next pointer to the node that was before it
     removedNode.next = null; // Delete the pointer to the removed nodes next
-    this.length--; // Decrement the list
+    this.length--; // Decrement the list length
     return removedNode; // Return removed node
   }
-
 
   // Reverse method to reverse the list from head to tail to tail to head
   reverse() {
