@@ -266,3 +266,9 @@ console.log("Remove the A: " + list.printList());
 
 // Display List
 console.log("Final List: " + list.printList());
+
+// Get size of list
+list.sizeOfList();
+
+// Is list empty
+console.log("Is List Empty?: " +list.isEmpty());
